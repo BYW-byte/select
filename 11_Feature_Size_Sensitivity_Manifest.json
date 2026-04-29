@@ -1,0 +1,36 @@
+{
+  "stage": "11_feature_space_size_sensitivity",
+  "sensitivity_type": "feature_space_size",
+  "primary_selected_n": 25,
+  "candidate_selected_n": [
+    15,
+    20,
+    25,
+    30,
+    35
+  ],
+  "feature_ranking_source": "train_only_consensus_scores",
+  "fit_source": "train",
+  "selection_source": "train_only",
+  "test_usage": "evaluation_only",
+  "sensitivity_role": "evaluation-only sensitivity; does not participate in selected features or primary rule set",
+  "test_used_for_size_selection": false,
+  "modifies_primary_selected_features": false,
+  "modifies_primary_rules": false,
+  "modifies_primary_rule_set": false,
+  "memory_limited_supplementary_rule_enumeration_recorded": false,
+  "modifies_evidence_tiers": false,
+  "criterion_note": "Confirmed_or_BinaryStable_Criterion_N_if_evaluated is a screening-style count based on q/RR/hit only; not identical to strict core-confirmed evidence tier",
+  "outputs": [
+    "Feature_Space_Size_Sensitivity.csv",
+    "Feature_Space_Size_Selected_Features_Long.csv",
+    "Feature_Space_Size_Rule_Complexity.csv"
+  ],
+  "run_id": "20260428_124049_42",
+  "script_name": "11_feature_space_size_sensitivity",
+  "script_version_note": "sentinel-aware audit hard-stop version",
+  "created_at": "2026-04-28T12:56:00",
+  "semantic_deduplication_version": "semantic-deduplication-v2",
+  "missing_category_detector_version": "missing-category-detector-v2",
+  "age_semantic_feature_version": "age-over60-semantic-v1"
+}

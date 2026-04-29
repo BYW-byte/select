@@ -1,0 +1,32 @@
+{
+  "stage": "06_blind_replay",
+  "test_usage": "evaluation_only_blind_replay",
+  "fit_source": "none",
+  "selection_source": "none",
+  "evaluation_source": "test",
+  "rule_manifest_source": "frozen_train_derived_manifest",
+  "modifies_rules": false,
+  "modifies_manifest": false,
+  "modifies_features": false,
+  "unresolved_rules_role": "audit_only_no_rule_remining_trigger",
+  "rule_item_replay_audit_scope": "all_manifest_items",
+  "blind_replay_uses_observed_source_value_constraint": true,
+  "sentinel_flags_used_for_blind_replay": true,
+  "missing_category_items_checked_in_blind_replay": true,
+  "pure_missing_unknown_forbidden_in_frozen_rules": true,
+  "semantic_group_written_to_rule_item_audit": true,
+  "test_used_for_rule_selection": false,
+  "rule_n": 15,
+  "unresolved_n": 0,
+  "outputs": [
+    "Final_Blind_Test_Validation_Report.csv",
+    "Rule_Item_Replay_Audit.csv"
+  ],
+  "run_id": "20260428_124049_42",
+  "script_name": "06_blind_replay",
+  "script_version_note": "sentinel-aware audit hard-stop version",
+  "created_at": "2026-04-28T12:44:56",
+  "semantic_deduplication_version": "semantic-deduplication-v2",
+  "missing_category_detector_version": "missing-category-detector-v2",
+  "age_semantic_feature_version": "age-over60-semantic-v1"
+}

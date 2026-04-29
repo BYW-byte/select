@@ -1,0 +1,16 @@
+﻿Rule_ID,Antecedent_Items,Bootstrap_Iterations,Bootstrap_Recurrent_N,Bootstrap_Recurrence
+R01,VEH_意识到危险前的初始速度_V0___GT_50_0||VEH_碰撞速度_VK___GT_50_0,200,200,1.0
+R02,VEH_意识到危险前的初始速度_V0___GT_50_0||性别_GESCHL_3-男性,200,200,1.0
+R03,VEH_碰撞速度_VK___GT_50_0||性别_GESCHL_3-男性,200,200,1.0
+R04,FEATURE_Age_Over60||性别_GESCHL_3-男性,200,200,1.0
+R05,VEH_意识到危险前的初始速度_V0___GT_50_0||VEH_碰撞时的总重_GEWGES___GT_1497_5,200,200,1.0
+R06,FEATURE_Age_Over60||VEH_意识到危险前的初始速度_V0___GT_50_0,200,200,1.0
+R07,VEH_碰撞时的总重_GEWGES___GT_1497_5||VEH_碰撞速度_VK___GT_50_0,200,200,1.0
+R08,性别_GESCHL_3-男性||路灯_STRABEL_0-无路灯,200,200,1.0
+R09,VEH_意识到危险前的初始速度_V0___GT_50_0||VEH_碰撞前的制动距离_WEGV___GT_0_5,200,200,1.0
+R10,FEATURE_Age_Over60||VEH_碰撞速度_VK___GT_50_0,200,200,1.0
+R11,VEH_碰撞前的制动距离_WEGV___GT_0_5||VEH_碰撞速度_VK___GT_50_0,200,200,1.0
+R12,VEH_碰撞速度_VK___GT_50_0||路灯_STRABEL_0-无路灯,200,200,1.0
+R13,VEH_意识到危险前的初始速度_V0___GT_50_0||VEH_车长_LAENGE___GT_4598_5,200,200,1.0
+R14,VEH_碰撞速度_VK___GT_50_0||VEH_车高_HOEHE___GT_1495_0,200,200,1.0
+R15,VEH_意识到危险前的初始速度_V0___GT_50_0||公路分类_STRKL_1-公路以外的其他道路,200,199,0.995

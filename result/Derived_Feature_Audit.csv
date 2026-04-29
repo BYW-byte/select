@@ -1,0 +1,2 @@
+﻿source_feature,raw_source_feature,derived_feature,threshold,train_positive_n,train_positive_rate,test_positive_n,test_positive_rate,train_source_missing_sentinel_n,train_source_missing_sentinel_rate,test_source_missing_sentinel_n,test_source_missing_sentinel_rate,unknown_age_treated_as_over60
+年龄年数记录_ALTER1,年龄年数记录(ALTER1),FEATURE_Age_Over60,60,584,0.2272373540856031,134,0.208398133748056,163,0.06342412451361867,42,0.06531881804043546,0

@@ -1,0 +1,2 @@
+﻿Split_Method,Total_Rows,Train_Rows,Test_Rows,Total_Accidents,Train_Accidents,Test_Accidents,Overlap_Accidents,Train_Severe_Rate,Test_Severe_Rate
+StratifiedGroupKFold,3213,2570,643,2794,2236,558,0,0.6560311284046693,0.656298600311042

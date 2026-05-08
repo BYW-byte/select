@@ -1,0 +1,69 @@
+{
+  "stage": "12_rule_extraction_baseline",
+  "fit_source": "train",
+  "selection_source": "train",
+  "rule_generation_source": "train_only",
+  "threshold_source": "frozen_train_derived_manifest",
+  "evaluation_source": "test_fixed_replay_only",
+  "test_used_for_rule_generation": false,
+  "test_used_for_rule_filtering": false,
+  "test_used_for_rule_sorting": false,
+  "test_used_for_topk_selection": false,
+  "test_used_for_evaluation_only": true,
+  "modifies_primary_rules": false,
+  "modifies_manifest": false,
+  "modifies_selected_features": false,
+  "input_paths": {
+    "train": "Ready_Matrix_Train.csv",
+    "test": "Ready_Matrix_Test.csv",
+    "manifest": "result\\04_Rule_Threshold_Manifest.csv",
+    "sentinel_train": "result\\Sentinel_Flags_Train.csv",
+    "sentinel_test": "result\\Sentinel_Flags_Test.csv"
+  },
+  "output_directory": "result",
+  "baseline_a": {
+    "name": "Unconstrained triplet baseline",
+    "candidate_triplets_from_manifest": true,
+    "sentinel_aware_rule_stats": true,
+    "min_train_hit_n": 40,
+    "min_train_support": 0.015,
+    "min_train_lift": 1.05,
+    "constraints_disabled": [
+      "semantic_duplicate_filter",
+      "family_diversity",
+      "core_family",
+      "same_source",
+      "axis_cap",
+      "physical_mechanism_valid_admission"
+    ],
+    "candidate_n": 226
+  },
+  "baseline_b": {
+    "name": "Conventional ARM/FPGrowth triplet baseline",
+    "min_support": 0.015,
+    "min_lift": 1.05,
+    "consequent": "__TARGET_SEVERE_INJURY__",
+    "antecedent_length": 3,
+    "mechanism_constraints_used": false,
+    "candidate_n": 190
+  },
+  "topk_values": [
+    20,
+    50
+  ],
+  "outputs": [
+    "12A_Unconstrained_Triplet_Candidates.csv",
+    "12B_Unconstrained_Triplet_Blind_Replay.csv",
+    "12C_Conventional_ARM_Triplet_Rules.csv",
+    "12D_Conventional_ARM_Blind_Replay.csv",
+    "12E_Rule_Extraction_Baseline_Comparison.csv",
+    "12F_Rule_Extraction_Baseline_Audit.csv"
+  ],
+  "run_id": "20260508_192555_42",
+  "script_name": "12_rule_extraction_baseline",
+  "script_version_note": "sentinel-aware audit hard-stop version",
+  "created_at": "2026-05-08T19:25:55",
+  "semantic_deduplication_version": "semantic-deduplication-v2",
+  "missing_category_detector_version": "missing-category-detector-v2",
+  "age_semantic_feature_version": "age-over60-semantic-v1"
+}
